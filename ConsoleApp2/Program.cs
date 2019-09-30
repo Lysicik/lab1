@@ -21,6 +21,7 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
+             Console.Title = "Гапчук Людмила ИУ5-31Б";
             //спросить про случай нескольких одинаковых корней
             Console.WriteLine("Ax^4+Bx^2+C=0");
             Console.WriteLine("Введите коэффициенты A, B, C");
