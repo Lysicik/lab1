@@ -22,16 +22,12 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
              Console.Title = "Гапчук Людмила ИУ5-31Б";
-            //спросить про случай нескольких одинаковых корней
             Console.WriteLine("Ax^4+Bx^2+C=0");
             Console.WriteLine("Введите коэффициенты A, B, C");
 
             double a, b, c;
             string A, B, C;
-            string answ = "Yes";
-
-            while (answ == "Yes")
-            {
+            
                 if ((args != null) && (args.Length >= 1))
                 {
                     A = args[0];
@@ -75,37 +71,24 @@ namespace ConsoleApp2
                     C = Console.ReadLine();
                 }
 
-                
-
-                
-
-                //while (!double.TryParse(Console.ReadLine(), out a))
-                //    Color(1, "Некорректный ввод!\nА: ");
-
-
-
-                //while (!double.TryParse(Console.ReadLine(), out b))
-                //    Color(1, "Некорректный ввод!\nB: ");
-
-
-                //while (!double.TryParse(Console.ReadLine(), out c))
-                //    Color(1, "Некорректный ввод!\nC: ");
+               
 
                 if ((a == 0) && (b == 0) && (c != 0))
                 {
                     Color(1, "Корней нет ");
                     Console.ReadKey();
-                    return;
-
-                }
+                //return;
+                Environment.Exit(1);
+            }
 
                 if ((a == 0) && (b == 0) && (c == 0))
                 {
                     Color(2, "Корни любые ");
                     Console.ReadKey();
-                    return;
+                    //return;
+                    Environment.Exit(1);
 
-                }
+            }
                 if ((a == 0) && (c / b < 0))
                 {
                     double x1, x2;
@@ -114,15 +97,17 @@ namespace ConsoleApp2
                     Color(2, "x = " + x1);
                     Color(2, "x = " + x2);
                     Console.ReadKey();
-                    return;
-                }
+                    //return;
+                    Environment.Exit(1);
+            }
 
                 else
-                if (c / b > 0)
+                if ((a == 0) && (c / b > 0))
                 {
                     Color(1, "Действительных корней нет");
                     Console.ReadKey();
-                    return;
+                    //return;
+                    Environment.Exit(1);
                 }
 
 
@@ -184,7 +169,7 @@ namespace ConsoleApp2
 
 
                 Console.ReadKey();
-            }
+            
         }
     }
 

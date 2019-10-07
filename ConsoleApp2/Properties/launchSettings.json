@@ -1,8 +1,7 @@
 {
   "profiles": {
     "ConsoleApp2": {
-      "commandName": "Project",
-      "commandLineArgs": "2 3 4"
+      "commandName": "Project"
     }
   }
 }
