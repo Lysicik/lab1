@@ -89,13 +89,21 @@ namespace ConsoleApp2
                     Environment.Exit(1);
 
             }
-                if ((a == 0) && (c / b < 0))
+                if ((a == 0) && (c / b <= 0))
+                {
+                if (c / b < 0)
                 {
                     double x1, x2;
                     x1 = Math.Sqrt(-c / b);
                     x2 = -Math.Sqrt(-c / b);
                     Color(2, "x = " + x1);
                     Color(2, "x = " + x2);
+                } 
+                else
+                {
+                    double x3 = 0;
+                    Color(2, "x = " + x3);
+                }
                     Console.ReadKey();
                     //return;
                     Environment.Exit(1);
@@ -121,14 +129,19 @@ namespace ConsoleApp2
 
                 else
                 {
-                    if (D == 0 && (-b / (2 * a)) > 0)
+                    if (D == 0 && (-b / (2 * a)) >= 0)
                     {
-
+                        if ((-b / (2 * a)) > 0) {
                         double x1, x2;
                         x1 = Math.Sqrt(-b / (2 * a));
                         x2 = -Math.Sqrt(-b / (2 * a));
                         Color(2, "x = " + x1);
                         Color(2, "x = " + x2);
+                    }
+                    else {
+                        double x3 = 0;
+                        Color(2, "x = " + x3);
+                    }
                     }
 
                     else
