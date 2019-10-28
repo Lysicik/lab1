@@ -21,5 +21,9 @@ namespace ConsoleApp3
 
         public void Print() => Console.WriteLine(this.ToString());
 
+        public override string ToString()
+        {
+            return $"{this.FigureName} с площадью {this.Area()} и стороной {Side}";
+        }
     }
 }

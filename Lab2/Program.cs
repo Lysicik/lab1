@@ -6,9 +6,9 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            Circle a = new Circle(5);
-            Rectangle b = new Rectangle(3, 5);
-            Square c = new Square(5);
+            Circle a = new Circle(1);
+            Rectangle b = new Rectangle(4, 7);
+            Square c = new Square(7);
             a.Print();
             b.Print();
             c.Print();
