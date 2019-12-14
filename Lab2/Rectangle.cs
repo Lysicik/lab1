@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ConsoleApp3
 {
-    class Rectangle : Figure, IPrint
+    public class Rectangle : Figure, IPrint
     {
         public Rectangle(double height = 0, double width = 0)
         {
@@ -25,7 +23,7 @@ namespace ConsoleApp3
 
         public override string ToString()
         {
-            return $"{FigureName} с площадью {Area()} и высотой {Height}, а шириной {Width}";
+            return $"{FigureName}, S = {Area()}, A = {Height}, B = {Width}";
         }
     }
 }

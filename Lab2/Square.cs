@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ConsoleApp3
 {
-    class Square : Figure, IPrint
+    public class Square : Figure, IPrint
     {
         public Square(double side = 0)
         {
@@ -16,14 +14,14 @@ namespace ConsoleApp3
 
         public override double Area()
         {
-            return Side*Side;
+            return Side * Side;
         }
 
         public void Print() => Console.WriteLine(this.ToString());
 
         public override string ToString()
         {
-            return $"{this.FigureName} с площадью {this.Area()} и стороной {Side}";
+            return $"{this.FigureName}, S = {this.Area()}, A = {Side}";
         }
     }
 }

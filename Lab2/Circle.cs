@@ -3,7 +3,7 @@
 
 namespace ConsoleApp3
 {
-    class Circle : Figure, IPrint
+    public class Circle : Figure, IPrint
     {
         public Circle(double radius = 0)
         {
@@ -19,7 +19,7 @@ namespace ConsoleApp3
 
         public override string ToString()
         {
-            return $"{this.FigureName} с площадью {this.Area()} и радиусом {Radius}";
+            return $"{this.FigureName}, S = {this.Area()}, R = {Radius}";
         }
 
     }
