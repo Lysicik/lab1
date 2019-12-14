@@ -22,6 +22,6 @@ namespace ConsoleApp3
         public override string ToString()
         {
             return $"{this.FigureName}, S = {this.Area()}, A = {Side}";
-        }
+        } 
     }
 }
